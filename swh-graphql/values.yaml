@@ -5,7 +5,7 @@
 namespace: default
 
 # Number of graphql pods to deploy
-replicas: 1
+replicas: 2
 
 image:
   # The name of the image to use
