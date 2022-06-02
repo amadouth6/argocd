@@ -19,10 +19,6 @@ spec:
       valueFiles:
         - myvalues.yaml
 
-    directory:
-      recurse: true
-
- 
   syncPolicy:
     syncOptions:
       - CreateNamespace=true    
