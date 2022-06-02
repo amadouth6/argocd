@@ -1,0 +1,14 @@
+image:
+  # The name of the image to use
+  name: amadouth/graphql
+  # The version of the image to use
+  version: "1.0"
+
+# The storage url to query
+storageUrl: http://webapp.internal.staging.swh.network:5002/
+
+
+# The ingress host to listen for
+ingressHost: graphql.localdomain
+
+
