@@ -11,7 +11,7 @@ spec:
     
   project: default
   source:
-    repoURL: https://github.com/amadouth6/swh-apps.git
+    repoURL: https://github.com/amadouth6/argocd.git
     targetRevision: HEAD
     path: swh-graphql/
     helm:
