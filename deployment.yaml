@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+
+kind: Deployment
+metadata:
+  name: graphql
+spec:
+  selector:
+    matchLabels:
+      app: graphql
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        editor: vscode
+        app: graphql
+    spec:
+      containers:
+      - name: graphql
+        image: amadouth/graphql:1.0
