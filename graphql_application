@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: graphql
+  namespace: argocd
+
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+    
+  project: default
+  source:
+    repoURL: https://github.com/amadouth6/argocd.git
+    targetRevision: HEAD
+    path: swh-graphql/
+    helm:
+      releaseName: graphql
+      valueFiles:
+        - myvalues.yaml
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true    
+    
+    automated:
+      selfHeal: true
+      prune: true
