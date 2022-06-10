@@ -15,7 +15,7 @@ spec:
     targetRevision: HEAD
     path: swh-graphql/
     helm:
-      releaseName: graphql
+      releaseName: graphqll
       valueFiles:
         - myvalues.yaml
 
