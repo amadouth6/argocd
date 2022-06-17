@@ -13,5 +13,5 @@ ingressHost: graphql.minikube-cluster
 
 replicas: 3
 
-namespace: minikube-cluster
+namespace: graphql-namespace
 
