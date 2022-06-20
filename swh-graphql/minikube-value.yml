@@ -2,4 +2,4 @@
 ingressHost: graphql.minikube-cluster
 
 #Minikube namespace deployment
-namespace: graphql-namespace
+namespace: graphql-minikube
