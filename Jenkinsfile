@@ -17,7 +17,7 @@ node {
                         //sh "git switch minikube-cluster"
                         sh "cat swh-graphql/myvalues.yaml"
                         sh "sed -i 's+version:.*+version: \"${DOCKERTAG}\"+g' swh-graphql/myvalues.yaml"
-                        //sh "sed -i 's+amadouth/graphql.*+amadouth/graphql:${DOCKERTAG}+g' swh-graphql/myvalues.yaml"
+                        sh "sed -i 's+amadouth/graphql.*+amadouth/graphql:${DOCKERTAG}+g' swh-graphql/myvalues.yaml"
                         sh "cat swh-graphql/myvalues.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
