@@ -8,4 +8,4 @@ image:
 storageUrl: http://webapp.internal.staging.swh.network:5002/
 
 #Replicas value number
-replicas: 3
+replicas: 2
