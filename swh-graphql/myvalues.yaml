@@ -11,5 +11,5 @@ storageUrl: http://webapp.internal.staging.swh.network:5002/
 # The ingress host to listen for
 ingressHost: graphql.localdomain
 
-replicas: 3
+replicas: 2
 
